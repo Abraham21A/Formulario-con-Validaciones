@@ -61,10 +61,9 @@ label {
   font-size: 16px;
   position: absolute;
   top: 12px;
-  left: 15px;
+  left: 18px;
   transition: 0.5s ease-in-out all;
   pointer-events: none;
-
 }
 
 input:focus~label, input:valid~label {
@@ -73,14 +72,37 @@ input:focus~label, input:valid~label {
   color: #2196f3;
 }
 
-.marginR {
-  display: flex;
+.labelT {
+  top: -12px;
+  background-color: #7e7e7e;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 2px solid #616161;
+  font-size: 12px;
 }
 
-
-/* input:focus~label.labelM, input:valid~label.labelM {
+input[type="radio"]:checked + label.labelH {
   left: 150px;
-} */
+  background-color: #2196f3;
+  border: 2px solid #0d60a3;
+}
+
+input[type="radio"]:checked + label.labelM {
+  left: 150px;
+  background-color: #c4147e;
+  border: 2px solid #841055;
+}
+
+ input:focus~label.labelH, input:valid~label.labelH {
+  top: -12px;
+  color: #fff;
+}
+
+input:focus~label.labelM, input:valid~label.labelM {
+  top: -12px;
+  color: #ffff;
+} 
 
 .barra {
   position: relative;
@@ -119,8 +141,9 @@ button {
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-@media screen and (max-width: 500px) {
+@media  (max-width: 500px) {
   form{
-    width: 80%;
+    width: 100%;
   }
 }
+
