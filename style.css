@@ -12,7 +12,6 @@ body {
   background: #1488CC;  
   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); 
   background: linear-gradient(to right, #2B32B2, #1488CC);
-  height: 650px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -36,7 +35,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
 }
 
 h2 {
@@ -102,16 +101,17 @@ input:focus~label, input:valid~label {
   border-radius: 8px;
   border: 2px solid #616161;
   font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  left: 0px;
 }
 
 input[type="radio"]:checked + label.labelH{
-  left: 150px;
   background-color: #2196f3;
   border: 2px solid #0d60a3;
 }
 
 input[type="radio"]:checked + label.labelM{
-  left: 150px;
   background-color: #c4147e;
   border: 2px solid #841055;
 }
@@ -147,7 +147,7 @@ input:focus~.barra::before {
 }
 
 button {
-  font-family: 'poppins',sans-serif;
+  font-family: 'Poppins',sans-serif;
   background: #1488CC;  
   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); 
   background: linear-gradient(to right, #2B32B2, #1488CC);
@@ -166,8 +166,8 @@ button {
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.5);
   color: #fff;
@@ -179,13 +179,41 @@ footer {
 }
 
 .grupo-icons {
-  justify-content: space-between;
+  margin: 5px 20px;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+i {
+  margin: 5px;
+}
+
+.bi-instagram:hover {
+  color:  #8914cc; 
+}
+
+.bi-github:hover {
+  color:  #222354; 
 }
 
 
-@media  (max-width: 500px) {
+@media  (max-width: 398px) {
+  main {
+    padding: 20px 0px;
+  }
+
   form{
     width: 100%;
+  }
+}
+
+@media (min-width: 1420px) {
+  main {
+    padding: 108px 50px;
   }
 }
 
