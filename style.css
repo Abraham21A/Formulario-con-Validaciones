@@ -200,6 +200,19 @@ i {
   color:  #222354; 
 }
 
+.box-warning{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #D80000 ;
+  padding-top: 20px;
+}
 
 @media  (max-width: 398px) {
   main {
