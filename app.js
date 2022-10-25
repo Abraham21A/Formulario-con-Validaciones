@@ -14,11 +14,11 @@ form.addEventListener('submit', e=> {
     let entrar = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     if(nombre.value.length < 3) {
-        warnings += `-El nombre es muy Corto <br>`
+        warnings += `-El Nombre es muy Corto <br>`
         entrar = true
     }
     if(nick.value.length < 5) {
-        warnings += `-El apellido es muy Corto <br>`
+        warnings += `-El Apellido es muy Corto <br>`
         entrar = true
     }
     if(!regexEmail.test(email.value)) {
@@ -26,7 +26,7 @@ form.addEventListener('submit', e=> {
         entrar = true
     }
     if(pass.value.length < 8){
-        warnings += `-La contraseña es muy corta <br>`
+        warnings += `-La Contraseña es muy corta <br>`
         entrar = true
     }
     if(generoH.checked == false && generoM.checked ==false) {
@@ -35,5 +35,7 @@ form.addEventListener('submit', e=> {
     }
     if(entrar){
         parrafo.innerHTML = warnings
+    } else {
+        location.href = "submitted.html";
     }
 });
